@@ -11,6 +11,7 @@ let newSalaries = {
   Alireza: 400,
   Ehsan: 600,
 };
+// Trick 1
 function topSalarys(input) {
   let arr = Object.entries(input);
   arr.sort((a, b) => {
@@ -24,3 +25,19 @@ function topSalarys(input) {
   }
 }
 topSalarys(newSalaries);
+
+// Trick 2
+// function topSalary(obj) {
+//   let maxSalary = 0;
+//   let maxName = [];
+//   for (let name in obj) {
+//     if (obj[name] > maxSalary) {
+//       maxSalary = obj[name];
+//       maxName = [name];
+//     } else if (obj[name] === maxSalary) {
+//       maxName.push(name);
+//     }
+//   }
+//   return `${maxName.join(" and ")} Have Max Salary 😎`;
+// }
+// console.log(topSalary(newSalaries));
