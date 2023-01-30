@@ -30,11 +30,11 @@ topSalarys(newSalaries);
 // function topSalary(obj) {
 //   let maxSalary = 0;
 //   let maxName = [];
-//   for (let name in obj) {
-//     if (obj[name] > maxSalary) {
-//       maxSalary = obj[name];
+//   for (let [name, salary] of Object.entries(obj)) {
+//     if (salary > maxSalary) {
+//       maxSalary = salary;
 //       maxName = [name];
-//     } else if (obj[name] === maxSalary) {
+//     } else if (salary === maxSalary) {
 //       maxName.push(name);
 //     }
 //   }
