@@ -1,15 +1,5 @@
 "use strict";
 
-// Trick 1
-function unique(arr) {
-  let result = [];
-  for (let item of arr) {
-    if (!result.includes(item)) {
-      result.push(item);
-    }
-  }
-  return result;
-}
 let values = [
   "Hare",
   "Krishna",
@@ -21,4 +11,20 @@ let values = [
   "Hare",
   ":-O",
 ];
+// Trick 1
+function unique(arr) {
+  let result = [];
+  for (let item of arr) {
+    if (!result.includes(item)) {
+      result.push(item);
+    }
+  }
+  return result.join(" , ");
+}
 console.log(unique(values));
+
+// Trick 2
+// function unique(arr) {
+//   return Array.from(new Set(arr));
+// }
+// console.log(unique(values).join(" , "));
