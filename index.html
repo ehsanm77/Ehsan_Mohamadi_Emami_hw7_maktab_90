@@ -43,24 +43,25 @@
           <option value="Option 2">Course 2</option>
         </select>
       </div>
-      <div class="gender">
-        <p>Gender:</p>
-        <div class="gender-radio">
-          <label for="male">Male</label>
-          <input type="radio" id="male" />
-          <label for="female">Female</label>
-          <input type="radio" id="female" />
-          <label for="other">Other</label>
-          <input type="radio" id="other" />
-        </div>
+          <label for="gender" id="gender">Gender:
+           <br>
+            <input type="radio" id="male" name="gender"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"/>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender"/>
+            <label for="other">Other</label> 
+          </label>
       </div>
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" value="+91" maxlength="4" />
-      <label for=""></label>
+      <label for="phone-code">Phone:</label>
+      <input type="tel" id="phone-code" name="phone-code" value="+91" maxlength="3" />
+      <label for="phone"></label>
       <input
         type="tel"
         pattern="[0-9]{10}"
         maxlength="10"
+        id="phone"
+        name="phone"
         placeholder="Phone no"
         required
       />
@@ -78,6 +79,7 @@
         id="email"
         name="email"
         placeholder="Enter Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
         required
       />
 
