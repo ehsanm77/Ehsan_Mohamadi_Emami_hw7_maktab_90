@@ -51,6 +51,7 @@ function validateForm(e) {
     "First name": firstName,
   };
   console.log(obj);
+  form.reset();
   return true;
 }
 btn.addEventListener("click", validateForm);

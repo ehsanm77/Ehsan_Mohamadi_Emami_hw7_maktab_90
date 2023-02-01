@@ -8,46 +8,87 @@
     <title>Document</title>
   </head>
   <body>
-    <form onsubmit="return validateForm()">
+    <form onsubmit="return validateForm()" id="form">
+      <h1>Student Registeration Form</h1>
       <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required />
-
-      <label for="middleName">Middle Name:</label>
-      <input type="text" id="middleName" name="middleName" />
-
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required />
-
-      <label for="selectOption">Select:</label>
-      <select id="selectOption" name="selectOption">
-        <option value="">--Select--</option>
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
-      </select>
-
-      <label for="phone">Phone:</label>
       <input
-        type="tel"
-        id="phone"
-        name="phone"
-        value="91"
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="Firstname"
         required
-        pattern="[0-9]{10}"
       />
 
+      <label for="middleName">Middle Name:</label>
+      <input
+        type="text"
+        id="middleName"
+        name="middleName"
+        placeholder="Middlename"
+      />
+
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Lastname"
+        required
+      />
+      <div class="select-course">
+        <label for="selectOption">Course : </label>
+        <select id="selectOption" name="selectOption">
+          <option value="">--Select--</option>
+          <option value="Option 1">Course 1</option>
+          <option value="Option 2">Course 2</option>
+        </select>
+      </div>
+      <div class="gender">
+        <p>Gender:</p>
+        <div class="gender-radio">
+          <label for="male">Male</label>
+          <input type="radio" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" id="female" />
+          <label for="other">Other</label>
+          <input type="radio" id="other" />
+        </div>
+      </div>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" value="+91" maxlength="4" />
+      <label for=""></label>
+      <input
+        type="tel"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        placeholder="Phone no"
+        required
+      />
       <label for="textarea">Description:</label>
-      <textarea id="textarea" name="textarea"></textarea>
+      <textarea
+        id="textarea"
+        name="textarea"
+        placeholder="Current Address"
+        class="textarea"
+      ></textarea>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        required
+      />
 
       <label for="password">Password:</label>
       <input
         type="password"
         id="password"
         name="password"
-        required
         minlength="8"
+        placeholder="Enter Password"
+        required
       />
 
       <label for="rePassword">Re-type Password:</label>
@@ -55,10 +96,11 @@
         type="password"
         id="rePassword"
         name="rePassword"
-        required
         minlength="8"
+        placeholder="Retype Password"
+        required
       />
-      <button type="submit" id="btn">Register</button>
+      <button type="submit" id="btn" class="btn">Register</button>
     </form>
     <script src="script.js"></script>
   </body>
