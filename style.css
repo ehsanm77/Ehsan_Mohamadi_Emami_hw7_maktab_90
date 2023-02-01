@@ -49,12 +49,18 @@ input {
   border-radius: 0.5rem;
   border: none;
   outline: none;
-  padding: 3rem 1rem;
+  padding-bottom: 6rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  resize: none;
+  overflow-y: hidden;
+  /* max-width: 40rem;
+  max-height: 20rem; */
 }
-.textarea::placeholder {
+/* .textarea::placeholder {
   position: relative;
   bottom: 1.5rem;
-}
+} */
 .btn {
   padding: 1rem;
   margin-top: 1.5rem;
