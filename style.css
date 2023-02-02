@@ -1,0 +1,111 @@
+@import url(/_font.css);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'itim';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+video {
+  width: 118rem;
+  height: 40rem;
+}
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "yekan";
+}
+img {
+  width: 10rem;
+  transform: scale(1.2);
+  fill: aliceblue;
+}
+td {
+  padding: 2rem;
+}
+.filter-table {
+  width: 118rem;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0 1rem 0;
+  overflow-x: scroll;
+}
+.icon1 {
+  width: 1rem;
+  position: relative;
+  bottom: 2.5rem;
+  left: 9.2rem;
+}
+.icon2 {
+  width: 1rem;
+  position: relative;
+  bottom: 2.5rem;
+  left: 8rem;
+}
+.icon3 {
+  width: 1rem;
+  position: relative;
+  bottom: 2.5rem;
+  left: 8.5rem;
+}
+.btn {
+  width: 25rem;
+  background-color: rgb(27, 112, 208);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.8rem;
+  font-family: 'itim';
+  cursor: pointer;
+}
+select {
+  width: 25rem;
+  border: 1px solid rgb(181, 177, 177);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-family: 'itim';
+
+}
+table {
+  margin-top: 3rem;
+  padding: 0 10rem;
+  border-spacing: 0 1rem;
+}
+.table-body {
+  box-shadow: 0 0 20px 0.5px rgb(234, 226, 226);
+  border-radius: 1rem;
+}
+.table-body:hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+  background-color:rgb(232, 253, 255);
+}
+.table-btn{
+  width: 7rem;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  border: none;
+  background-color:rgb(133, 156, 232);
+  color: white;
+  font-family: 'itim';
+  cursor: pointer;
+  box-shadow: 0 10px 20px 1px rgb(234, 226, 226);
+}
