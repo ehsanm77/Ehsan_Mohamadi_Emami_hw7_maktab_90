@@ -1,3 +1,4 @@
+@import url(/_style.css);
 *,
 *::after,
 *::before {
@@ -13,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "itim" ;
 }
 form {
   width: 60rem;
@@ -69,4 +71,12 @@ input {
   border: none;
   border-radius: 0.5rem;
   font-weight: bold;
+  font-family: "itim" ;
+}
+::placeholder{
+  font-family: "itim" ;
+}
+select{
+  font-family: "itim" ;
+
 }
